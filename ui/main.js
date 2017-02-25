@@ -7,7 +7,7 @@ element.innerHTML="hi";
 //move img
 var marginleft=0;
 
-var img=document.getElementById("madi");
+var img = document.getElementById("madi");
 function moveRight()
 
 {
@@ -15,5 +15,5 @@ function moveRight()
     img.style.marginleft = marginleft + "px";
 }
 img.onclick = function(){
-    var interval=setInterval(moveRight,50);
+    var interval = setInterval(moveRight,50);
 };
