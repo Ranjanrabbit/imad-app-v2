@@ -5,8 +5,15 @@ element.innerHTML="hi";
 
 
 //move img
+var margimleft=0;
 
 var img=document.getElementById("madi");
-img.onclick=function(){
-    img.style.marginleft("300px")
+function moveRight()
+
+{
+    marginleft=marginleft+5;
+    img.style.marginleft=marginleft+"px";
 }
+img.onclick=function(){
+    var interval=setInterval(moveRight,50);
+};
